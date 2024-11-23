@@ -26,12 +26,17 @@ class DBInterfaceController @Inject()(cc: ControllerComponents)
     Ok("This is Interface")
   }
 
-  def postDB(): Action[AnyContent] = Action {
-    redisClient.set("test2", "ora") // Redisにデータを設定
+  def postDB(): Action[JsValue] = Action(parse.json) { request =>
+    val wordsArray = (request.body \ "words").as[Seq[String]]
 
+    // 配列の内容をRedisに保存
+    redisClient.set("wordsList", wordsArray.mkString(", ")) // 配列をカンマ区切りの文字列として保存
+
+    // レスポンスを返す
     val json: JsValue = Json.obj(
-      "hello" -> "world",
-      "language" -> "scala"
+      "status" -> "success",
+      "message" -> "Words have been saved to Redis.",
+      "words" -> wordsArray
     )
 
     Ok(json)
