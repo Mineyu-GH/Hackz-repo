@@ -1,0 +1,43 @@
+@import helper._
+@(game: ShiritoriGame)(implicit request: RequestHeader)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>しりとり Game</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <script src="@routes.Assets.versioned("javascripts/main.js")" defer></script>
+        @* Add CSRF token *@
+        <script>
+        const csrfToken = '@helper.CSRF.getToken.value';
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>しりとり Game</h1>
+        
+        <div class="game-info">
+            <h2>Target Character: <span id="targetChar">@game.targetChar</span></h2>
+            <h3>Score: <span id="score">@game.score</span></h3>
+            <h3>Status: <span id="gameState">@game.state</span></h3>
+        </div>
+
+        <div class="game-input">
+            <input type="text" id="wordInput" placeholder="Enter word..." @if(game.state == GameOver){disabled}>
+            <button onclick="submitWord()">Submit</button>
+            <button onclick="newGame()">New Game</button>
+        </div>
+
+        <div id="error" class="error-message"></div>
+
+        <div class="word-list">
+            <h3>Used Words:</h3>
+            <ul id="usedWords">
+            @for(word <- game.usedWords) {
+                <li>@word</li>
+            }
+            </ul>
+        </div>
+        </div>
+    </body>
+</html>
