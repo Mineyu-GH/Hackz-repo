@@ -1,0 +1,63 @@
+# 開発環境用のdokcer-compose
+version: "3"
+services:
+  # node.js npm webpackの環境構築
+  front:
+    build:
+      # dockerfileは、親ディレクトリをCOPYできないので、
+      # ここで、contextをルートに設定している。
+      context: ./
+      dockerfile: ./front/Dockerfile
+    container_name: vue-js-container
+    environment:
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
+    volumes:
+      - ./front:/app/
+    # ホストから通信するためのポート
+    networks:
+      - play-network
+    ports:
+      - "8080:8080"
+    tty: true
+  play-framework:
+    # https://hub.docker.com/r/hseeberger/scala-sbt/dockerfile
+    # すでに作ってくれているイメージを使う
+    image: hseeberger/scala-sbt
+    container_name: play-container
+    volumes:
+      # TODO:どのファイルをコンテナ内にマウントするののか
+      # このプロジェクト自体をコンテナ内の/rootディレクトリにマウントする
+      - ../play-java-seed:/root
+    networks:
+      - play-network
+    # ホストから通信するためのポート
+    ports:
+      - "9000:9000"
+    # 同じdockerネットワークの他のコンテナから通信するためのポート
+    expose:
+      - "9000"
+    tty: true
+  db:
+    image: mysql:5.7
+    container_name: mysql-container
+    environment:
+      MYSQL_DATABASE: facebook
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./db/sql:/docker-entrypoint-initdb.d
+      - ./db/my.cnf:/etc/mysql/conf.d/my/cnf
+    # ホストから通信するためのポート
+    networks:
+      - play-network
+    ports:
+      - "3314:3306"
+    # 同じdockerネットワークの他のコンテナから通信するためのポート
+    expose:
+      - "3306"
+
+networks:
+  play-network:
+    external: true

@@ -1,3 +1,5 @@
+import play.sbt.PlayImport.javaJdbc
+
 name := """ittansaikidou"""
 organization := "com.example"
 
@@ -9,5 +11,7 @@ scalaVersion := "2.13.15"
 
 libraryDependencies ++= Seq(
     guice,
-    "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.1" % Test
+    javaJdbc,
+    "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.1" % Test,
+    "mysql" % "mysql-connector-java" % "8.0.33"
 )
