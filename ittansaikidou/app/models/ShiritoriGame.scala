@@ -1,6 +1,6 @@
 package models
 
-import services.CSVReader
+import services.readCSV
 
 case class ShiritoriGame(
     targetChar: String,
@@ -21,7 +21,7 @@ object ShiritoriGame {
             Left("Game Over! 「ん」で終わりました")
         } else if (game.usedWords.contains(word)) {
             Left("その言葉はもう使っています")
-        } else if (!CSVReader.isExistWord(word)){
+        } else if (!readCSV.isExistWord(word)){
             Left("登録されていない日本語です")
         }else if (word.endsWith(game.targetChar)) {
             Right("2" + word)

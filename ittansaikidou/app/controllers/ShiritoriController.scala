@@ -6,7 +6,7 @@ import play.api.libs.json._
 import models._
 import scala.concurrent.{ExecutionContext, Future}
 import scala.concurrent.duration._
-import services.CSVReader
+import services.readCSV
 
 @Singleton
 class ShiritoriController @Inject()(val controllerComponents: ControllerComponents)
@@ -52,7 +52,7 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
   }
 
   def index(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
-    CSVReader.readCSV()
+    readCSV.readCSV()
     Ok(views.html.shiritori(currentGame))
   }
 

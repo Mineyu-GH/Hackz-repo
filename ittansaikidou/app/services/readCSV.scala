@@ -3,7 +3,7 @@ package services
 import scala.io.{Codec, Source}
 import scala.util.Using
 
-object CSVReader {
+object readCSV {
   private var lib: Set[String] = Set.empty
   private var csv1 = "public/db/goihyo02.csv"
 
@@ -21,12 +21,12 @@ object CSVReader {
         println(s"Error reading CSV file: ${exception.getMessage}") // エラー時のログ出力
         Set.empty[String] // エラー時は空のセットを返す
     }
-    lib = csvContent.flatMap(_.split(",").map(_.trim)).toSet
+    lib = csvContent.flatMap(_.split(",").map(_.trim).toSet)
 
   }
 
   //ひらがな→カタカナ
-  def convertHtoT(hiragana: String): String = {
+  private def convertHtoT(hiragana: String): String = {
     if (hiragana == null || hiragana.isEmpty) {
       return ""
     }
