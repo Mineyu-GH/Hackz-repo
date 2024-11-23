@@ -1,5 +1,7 @@
 package models
 
+import services.CSVReader
+
 case class ShiritoriGame(
     targetChar: String,
     lastword: String = "しりとり",
@@ -19,7 +21,9 @@ object ShiritoriGame {
             Left("Game Over! 「ん」で終わりました")
         } else if (game.usedWords.contains(word)) {
             Left("その言葉はもう使っています")
-        } else if (word.endsWith(game.targetChar)) {
+        } else if (!CSVReader.isExistWord(word)){
+            Left("登録されていない日本語です")
+        }else if (word.endsWith(game.targetChar)) {
             Right("2" + word)
         }
         else {
