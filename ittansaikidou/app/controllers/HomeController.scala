@@ -37,6 +37,7 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
             if (validWord.startsWith("2")) {
               currentGame = currentGame.copy(
                 targetChar = ShiritoriGame.getRandomChar,
+                lastword = validWord.substring(1),
                 usedWords = validWord.substring(1) :: currentGame.usedWords,
                 score = currentGame.score + 2 * (validWord.substring(1).length)
             )
@@ -44,6 +45,7 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
             else {
               currentGame = currentGame.copy(
                 targetChar = ShiritoriGame.getRandomChar,
+                lastword = validWord,
                 usedWords = validWord :: currentGame.usedWords,
                 score = currentGame.score + word.length
             )

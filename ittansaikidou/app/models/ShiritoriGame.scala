@@ -2,7 +2,8 @@ package models
 
 case class ShiritoriGame(
     targetChar: String,
-    usedWords: List[String] = List.empty,
+    lastword: String = "しりとり",
+    usedWords: List[String] = List("しりとり"),
     score: Int = 0,
     state: GameState = Active
 )
@@ -11,7 +12,10 @@ object ShiritoriGame {
     def validateWord(word: String, game: ShiritoriGame): Either[String, String] = {
         if (!word.matches("^[ぁ-んー]*$")) {
             Left("ひらがな")
-        } else if (word.endsWith("ん")) {
+        } else if (word.head != game.lastword.last) {
+            Left(s"最初の文字は「${game.lastword.last}」です")
+        }
+        else if (word.endsWith("ん")) {
             Left("Game Over! 「ん」で終わりました")
         } else if (game.usedWords.contains(word)) {
             Left("その言葉はもう使っています")
