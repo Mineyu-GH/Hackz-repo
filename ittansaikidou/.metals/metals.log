@@ -2066,3 +2066,48 @@ java.lang.RuntimeException: invalid symbol format
 警告: Unmatched cancel notification for request id 159
 2024.11.23 15:41:02 INFO  compiling root (1 scala source)
 2024.11.23 15:41:08 INFO  time: compiled root in 6.72s
+2024.11.23 15:41:54 INFO  compiling root (1 scala source)
+2024.11.23 15:42:00 INFO  time: compiled root in 5.42s
+2024.11.23 15:43:06 INFO  compiling root (1 scala source)
+2024.11.23 15:43:09 INFO  time: compiled root in 3.16s
+2024.11.23 15:43:32 INFO  compiling root (1 scala source)
+2024.11.23 15:43:32 INFO  time: compiled root in 0.65s
+2024.11.23 15:43:53 INFO  time: compiled root in 28ms
+2024.11.23 15:44:12 INFO  compiling root (1 scala source)
+2024.11.23 15:44:16 INFO  time: compiled root in 3.22s
+11月 23, 2024 3:45:36 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1051
+2024.11.23 15:45:46 INFO  compiling root (1 scala source)
+11月 23, 2024 3:45:46 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1112
+2024.11.23 15:45:49 INFO  time: compiled root in 2.91s
+11月 23, 2024 3:45:49 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1119
+11月 23, 2024 3:46:13 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1153
+11月 23, 2024 3:46:27 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1184
+11月 23, 2024 3:46:33 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1219
+11月 23, 2024 3:47:54 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1505
+2024.11.23 15:48:01 INFO  compiling root (1 scala source)
+2024.11.23 15:48:05 INFO  time: compiled root in 4.12s
+11月 23, 2024 3:48:41 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1573
+2024.11.23 15:49:13 INFO  compiling root (1 scala source)
+2024.11.23 15:49:16 INFO  time: compiled root in 2.75s
+2024.11.23 15:50:54 INFO  compiling root (1 scala source)
+2024.11.23 15:50:58 INFO  time: compiled root in 3.42s
+11月 23, 2024 3:55:00 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 2057
+11月 23, 2024 3:55:40 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 2198
+2024.11.23 15:56:36 INFO  compiling root (1 scala source)
+2024.11.23 15:56:48 INFO  time: compiled root in 11s
+11月 23, 2024 3:58:07 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 2372
+2024.11.23 15:58:31 INFO  compiling root (1 scala source)
+2024.11.23 15:58:32 WARN  Could not load snapshot text for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala
+2024.11.23 15:58:33 WARN  Could not load snapshot text for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala
+2024.11.23 15:58:38 INFO  time: compiled root in 6.41s
