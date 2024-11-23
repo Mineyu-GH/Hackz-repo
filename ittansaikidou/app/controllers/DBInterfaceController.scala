@@ -4,19 +4,23 @@ import javax.inject.Inject
 import play.api.libs.json._
 import play.api.mvc._
 import com.redis._
+import com.typesafe.config.{Config, ConfigFactory}
 
 import javax.net.ssl.SSLContext
 
 class DBInterfaceController @Inject()(cc: ControllerComponents)
   extends AbstractController(cc) {
 
-  private val key = sys.env.getOrElse("REDIS_AUTH_KEY", "")
+  private val config: Config = ConfigFactory.load()
+
+  private val authKey = config.getString("redis.authKey")
+
   private val redisHost = "ikkai.redis.cache.windows.net"
   private val redisPort = 6379 // Redisの標準ポートに修正
   private val redisClient = new RedisClient(redisHost, redisPort)
 
   // コンストラクタ内で認証を設定
-//  redisClient.auth(key)
+  redisClient.auth(authKey)
 
   def fetch(): Action[AnyContent] = Action {
     Ok("This is Interface")
