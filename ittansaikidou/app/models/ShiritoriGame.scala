@@ -13,7 +13,7 @@ object ShiritoriGame {
         if (!word.matches("^[ぁ-んー]*$")) {
             Left("ひらがな")
         } else if (word.head != game.lastword.last) {
-            Left(s"最初の文字は${game.lastword.last}です")
+            Left(s"最初の文字は「${game.lastword.last}」です")
         }
         else if (word.endsWith("ん")) {
             Left("Game Over! 「ん」で終わりました")
