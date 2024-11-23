@@ -5,14 +5,12 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.ShiritoriController.index()
-
-
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /getTimeRemaining    controllers.ShiritoriController.getTimeRemaining
 
 POST    /submit             controllers.ShiritoriController.submitWord
 POST    /newGame            controllers.ShiritoriController.newGame
 
-GET     /assets/*file       controllers.Assets.versioned(path="/public", file: Asset)
-
-GET     /getTimeRemaining    controllers.ShiritoriController.getTimeRemaining
+GET     /interface          controllers.DBInterfaceController.fetch()
+POST    /interface          controllers.DBInterfaceController.postDB()

@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "ittansaikidou-build-build",
-        "directory": "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project",
-        "workspaceDir": "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project",
+        "directory": "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project",
+        "workspaceDir": "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project",
         "sources": [
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/src/main/scala",
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/src/main/scala-2.12",
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/src/main/scala-2",
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/src/main/java",
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/src/main/scala-sbt-1.0",
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/src/main/scala",
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/src/main/scala-2.12",
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/src/main/scala-2",
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/src/main/java",
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/src/main/scala-sbt-1.0",
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -104,11 +104,11 @@
             "/Users/admin/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar",
             "/Users/admin/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar"
         ],
-        "out": "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/.bloop/ittansaikidou-build-build",
-        "classesDir": "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/.bloop/ittansaikidou-build-build/scala-2.12/sbt-1.0/classes",
+        "out": "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/.bloop/ittansaikidou-build-build",
+        "classesDir": "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/.bloop/ittansaikidou-build-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/src/main/resources",
-            "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/src/main/resources",
+            "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -216,7 +216,7 @@
             "config": {
                 "home": "/opt/homebrew/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project"
+                    "-Duser.dir=/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project"
                 ]
             },
             "mainClass": [
@@ -225,11 +225,11 @@
             "runtimeConfig": {
                 "home": "/opt/homebrew/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project"
+                    "-Duser.dir=/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project"
                 ]
             },
             "classpath": [
-                "/Users/admin/CODE/Scala-Hackz/Hackz/ittansaikidou/project/project/.bloop/ittansaikidou-build-build/scala-2.12/sbt-1.0/classes",
+                "/Users/admin/CODE/Scala-Hackz/Hackz-repo/ittansaikidou/project/project/.bloop/ittansaikidou-build-build/scala-2.12/sbt-1.0/classes",
                 "/Users/admin/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.5/sbt-bloop_2.12_1.0-2.0.5.jar",
                 "/Users/admin/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.1.0/bloop-config_2.12-2.1.0.jar",
                 "/Users/admin/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.30.14/jsoniter-scala-core_2.12-2.30.14.jar",
