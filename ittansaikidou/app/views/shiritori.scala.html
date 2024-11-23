@@ -23,7 +23,9 @@
         </div>
 
         <div class="game-input">
-            <input type="text" id="wordInput" placeholder="Enter word..." @if(game.state == GameOver){disabled}>
+            <form onsubmit="submitWord(); return false;">
+                <input type="text" id="wordInput" placeholder="しりとり" @if(game.state == GameOver){disabled}>
+            </form>
             <button onclick="submitWord()">回答</button>
             <button onclick="newGame()">New GAME</button>
         </div>

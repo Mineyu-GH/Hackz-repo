@@ -13,6 +13,8 @@ class readCSV @Inject()(val controllerComponents: ControllerComponents, env: Env
 
     try {
       val csvContent = Source.fromFile(csvFile).getLines().mkString("\n")
+      //CSVコンテントをデータベースへ書き込む
+
       Ok(csvContent)
     } catch {
       case e: Exception => InternalServerError(s"Error reading CSV file: ${e.getMessage}")
