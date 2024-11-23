@@ -1,6 +1,7 @@
 package services
 
-import scala.io.Source
+import scala.io.{Codec, Source}
+import scala.util.Using
 
 object CSVReader {
   private var lib: Set[String] = Set.empty
@@ -8,7 +9,18 @@ object CSVReader {
 
   def readCSV(): Unit = {
     val csvFile = new java.io.File(csv1)
-    val csvContent = Source.fromFile(csvFile).getLines()
+    // val csvContent = Source.fromFile(csvFile).getLines()
+    // Usingを使ってファイルを安全に読み込む
+    val csvContent: Set[String] = Using(Source.fromFile(csvFile)(Codec.UTF8)) { source =>
+      source.getLines()
+        .flatMap(_.split(",").map(_.trim)) // カンマ区切りで分割してトリム
+        .toSet // Setに変換
+    } match {
+      case scala.util.Success(content) => content // 成功時
+      case scala.util.Failure(exception) =>
+        println(s"Error reading CSV file: ${exception.getMessage}") // エラー時のログ出力
+        Set.empty[String] // エラー時は空のセットを返す
+    }
     lib = csvContent.flatMap(_.split(",").map(_.trim)).toSet
 
   }

@@ -51,14 +51,14 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
     timerOpt = None
   }
 
-  def index() = Action { implicit request: Request[AnyContent] =>
+  def index(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
     CSVReader.readCSV()
     Ok(views.html.shiritori(currentGame))
   }
 
-  def submitWord = Action(parse.json) { implicit request =>
+  def submitWord: Action[JsValue] = Action(parse.json) { implicit request =>
     val wordResult = (request.body \ "word").asOpt[String]
-    
+
     wordResult match {
       case Some(word) =>
         if (currentGame.state == Active) {
@@ -66,13 +66,13 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
             case Right(validWord) =>
               // Start or reset timer on valid word submission
               startTimer()
-              
+
               if (validWord.startsWith("2")) {
                 currentGame = currentGame.copy(
                   targetChar = ShiritoriGame.getRandomChar,
                   lastword = validWord.substring(1),
                   usedWords = validWord.substring(1) :: currentGame.usedWords,
-                  score = currentGame.score + 2 * (validWord.substring(1).length)
+                  score = currentGame.score + 2 * validWord.substring(1).length
                 )
               } else {
                 currentGame = currentGame.copy(
@@ -86,7 +86,7 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
                 "game" -> Json.toJson(currentGame),
                 "timeRemaining" -> timeRemaining
               ))
-            
+
             case Left(error) =>
               if (error.startsWith("Game Over")) {
                 currentGame = currentGame.copy(state = GameOver)
@@ -99,13 +99,13 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
         } else {
           BadRequest(Json.obj("error" -> "Game is already over"))
         }
-      
+
       case None =>
         BadRequest(Json.obj("error" -> "No word provided"))
     }
   }
 
-  def newGame = Action { implicit request =>
+  def newGame: Action[AnyContent] = Action { implicit request =>
     stopTimer()
     currentGame = ShiritoriGame(ShiritoriGame.getRandomChar)
     timeRemaining = 30
@@ -113,7 +113,7 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
   }
 
   // Endpoint to get current time remaining
-  def getTimeRemaining = Action {
+  def getTimeRemaining: Action[AnyContent] = Action {
     Ok(Json.obj("timeRemaining" -> timeRemaining))
   }
 }
