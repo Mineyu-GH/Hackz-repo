@@ -1913,3 +1913,128 @@ java.lang.RuntimeException: invalid symbol format
 2024.11.23 13:55:14 INFO  Shut down connection with build server.
 2024.11.23 13:55:14 INFO  Shut down connection with build server.
 2024.11.23 13:55:14 INFO  Exiting server
+2024.11.23 13:56:38 INFO  Started: Metals version 1.4.1 in folders 'C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou' for client Visual Studio Code 1.95.3.
+2024.11.23 13:56:40 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.23 13:56:40 INFO  no build target found for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.23 13:56:43 INFO  no build target found for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.23 13:56:43 INFO  no build target found for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.23 13:56:43 INFO  no build target found for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.23 13:56:43 INFO  Attempting to connect to the build server...
+11月 23, 2024 1:56:43 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 9
+2024.11.23 13:56:43 INFO  no build target found for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.23 13:56:43 INFO  no build target found for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.23 13:56:43 INFO  Found a Bloop server running
+11月 23, 2024 1:56:43 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 3
+2024.11.23 13:56:43 INFO  no build target found for C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.23 13:56:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\.metals\bsp.trace.json or C:\Users\miney\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.23 13:56:44 INFO  Attempting to connect to the build server...
+2024.11.23 13:56:44 INFO  Found a Bloop server running
+2024.11.23 13:56:44 INFO  Attempting to connect to the build server...
+2024.11.23 13:56:44 INFO  Found a Bloop server running
+2024.11.23 13:56:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\project\.metals\bsp.trace.json or C:\Users\miney\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.23 13:56:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\project\project\.metals\bsp.trace.json or C:\Users\miney\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.23 13:56:46 INFO  time: Connected to build server in 2.42s
+2024.11.23 13:56:46 INFO  Connected to Build server: Bloop v2.0.5
+2024.11.23 13:56:46 INFO  time: Imported build in 0.3s
+2024.11.23 13:56:46 INFO  running doctor check
+2024.11.23 13:56:46 INFO  java targets: ittansaikidou-build-build, root, ittansaikidou-build, root-test
+2024.11.23 13:56:58 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.23 13:57:05 INFO  time: indexed workspace in 18s
+2024.11.23 13:57:05 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 13:57:05 INFO  time: compiled root in 0.87s
+2024.11.23 13:57:05 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 13:57:07 INFO  time: compiled root in 1s
+2024.11.23 13:57:07 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 13:57:07 INFO  time: compiled root in 0.79s
+2024.11.23 13:57:49 WARN  Could not find semantic tokens for: file:///C:/Users/miney/OneDrive/デスクトップ/Dev/Hackz/ittansaikidou/app/controllers/HomeController.scala
+2024.11.23 13:58:21 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 13:58:23 INFO  time: compiled root in 1.33s
+2024.11.23 13:58:27 WARN  Could not find semantic tokens for: file:///C:/Users/miney/OneDrive/デスクトップ/Dev/Hackz/ittansaikidou/app/controllers/HomeController.scala
+2024.11.23 13:58:41 WARN  Could not find semantic tokens for: file:///C:/Users/miney/OneDrive/デスクトップ/Dev/Hackz/ittansaikidou/app/controllers/HomeController.scala
+2024.11.23 13:58:50 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 13:58:51 INFO  time: compiled root in 1.22s
+2024.11.23 13:59:57 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 13:59:59 INFO  time: compiled root in 1.69s
+11月 23, 2024 2:01:51 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 553
+2024.11.23 14:01:59 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 14:02:00 INFO  time: compiled root in 1.33s
+2024.11.23 14:04:37 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.23 14:04:38 INFO  time: compiled root in 1.43s
+2024.11.23 14:04:38 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.23 14:04:38 INFO  time: compiled root in 0.81s
+2024.11.23 14:05:36 INFO  compiling root (3 scala sources)
+2024.11.23 14:05:36 WARN  Invalid text document uri received from build server: file:///C:/Users/miney/OneDrive/デスクトップ/Dev/Hackz/ittansaikidou/target/scala-2.13/twirl/main/views/html/index.template.scala
+2024.11.23 14:05:36 WARN  Invalid text document uri received from build server: file:///C:/Users/miney/OneDrive/デスクトップ/Dev/Hackz/ittansaikidou/target/scala-2.13/routes/main/router/Routes.scala
+2024.11.23 14:05:36 INFO  time: compiled root in 0.73s
+2024.11.23 14:05:36 INFO  compiling root (3 scala sources)
+2024.11.23 14:05:37 INFO  time: compiled root in 0.52s
+2024.11.23 14:06:12 INFO  compiling root (7 scala sources)
+2024.11.23 14:06:13 INFO  time: compiled root in 1.32s
+2024.11.23 14:06:13 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 14:06:14 INFO  time: compiled root in 0.99s
+11月 23, 2024 2:06:49 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 725
+11月 23, 2024 2:06:55 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 753
+2024.11.23 14:07:00 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 14:07:02 INFO  time: compiled root in 1.72s
+2024.11.23 14:07:37 INFO  compiling root (3 scala sources)
+2024.11.23 14:07:38 WARN  Invalid text document uri received from build server: file:///C:/Users/miney/OneDrive/デスクトップ/Dev/Hackz/ittansaikidou/target/scala-2.13/twirl/main/views/html/index.template.scala
+2024.11.23 14:07:38 INFO  time: compiled root in 1.68s
+2024.11.23 14:07:38 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.23 14:07:39 INFO  time: compiled root in 1.08s
+2024.11.23 14:07:39 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.23 14:07:40 INFO  time: compiled root in 0.93s
+2024.11.23 14:10:42 INFO  compiling root (3 scala sources)
+2024.11.23 14:10:44 WARN  Invalid text document uri received from build server: file:///C:/Users/miney/OneDrive/デスクトップ/Dev/Hackz/ittansaikidou/target/scala-2.13/twirl/main/views/html/index.template.scala
+2024.11.23 14:10:44 INFO  time: compiled root in 1.5s
+2024.11.23 14:10:44 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.23 14:10:45 INFO  time: compiled root in 1.08s
+2024.11.23 14:10:45 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.23 14:10:46 INFO  time: compiled root in 1.08s
+2024.11.23 14:14:53 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.23 14:14:54 INFO  time: compiled root in 1.3s
+2024.11.23 14:16:36 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.23 14:16:49 INFO  time: compiled root in 12s
+2024.11.23 14:17:11 INFO  compiling root (3 scala sources)
+2024.11.23 14:17:11 INFO  time: compiled root in 0.99s
+2024.11.23 14:17:12 INFO  compiling root (3 scala sources)
+2024.11.23 14:17:12 INFO  time: compiled root in 0.56s
+2024.11.23 14:18:28 INFO  compiling root (2 scala sources)
+2024.11.23 14:18:31 INFO  time: compiled root in 3.3s
+2024.11.23 14:18:31 INFO  compiling root (1 java source)
+2024.11.23 14:18:34 INFO  time: compiled root in 3.2s
+11月 23, 2024 2:18:45 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1149
+2024.11.23 14:18:52 INFO  time: code lens generation in 7.25s
+2024.11.23 14:19:21 INFO  compiling root (1 scala source)
+2024.11.23 14:19:21 INFO  time: compiled root in 0.98s
+2024.11.23 14:19:24 INFO  compiling root (1 scala source)
+2024.11.23 14:19:24 INFO  time: compiled root in 0.9s
+2024.11.23 14:20:55 INFO  compiling root (3 scala sources and 1 java source)
+2024.11.23 14:21:03 INFO  time: compiled root in 7.73s
+11月 23, 2024 2:22:00 午後 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+情報: Unsupported notification method: $/setTrace
+11月 23, 2024 2:26:02 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1202
+11月 23, 2024 2:26:02 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1203
+11月 23, 2024 2:26:02 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1210
+11月 23, 2024 2:26:02 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1207
+11月 23, 2024 2:26:55 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1212
+11月 23, 2024 2:26:55 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1213
+11月 23, 2024 2:26:55 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1214
+2024.11.23 14:52:26 INFO  Shutting down server
+2024.11.23 14:52:26 INFO  shutting down Metals
+2024.11.23 14:52:26 INFO  Shut down connection with build server.
+2024.11.23 14:52:26 INFO  Shut down connection with build server.
+2024.11.23 14:52:26 INFO  Shut down connection with build server.
+2024.11.23 14:52:26 INFO  Exiting server

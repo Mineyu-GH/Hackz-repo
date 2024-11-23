@@ -17,21 +17,21 @@
         <h1>しりとり Game</h1>
         
         <div class="game-info">
-            <h2>Target Character: <span id="targetChar">@game.targetChar</span></h2>
-            <h3>Score: <span id="score">@game.score</span></h3>
-            <h3>Status: <span id="gameState">@game.state</span></h3>
+            <h2>お題文字: <span id="targetChar">@game.targetChar</span></h2>
+            <h3>SCORE: <span id="score">@game.score</span></h3>
+            <h3>ゲームステータス: <span id="gameState">@game.state</span></h3>
         </div>
 
         <div class="game-input">
             <input type="text" id="wordInput" placeholder="Enter word..." @if(game.state == GameOver){disabled}>
-            <button onclick="submitWord()">Submit</button>
-            <button onclick="newGame()">New Game</button>
+            <button onclick="submitWord()">回答</button>
+            <button onclick="newGame()">New GAME</button>
         </div>
 
         <div id="error" class="error-message"></div>
 
         <div class="word-list">
-            <h3>Used Words:</h3>
+            <h3>使用済みワード:</h3>
             <ul id="usedWords">
             @for(word <- game.usedWords) {
                 <li>@word</li>
