@@ -2483,3 +2483,11 @@ java.lang.RuntimeException: invalid symbol format
 警告: Unmatched cancel notification for request id 6735
 2024.11.23 17:25:26 INFO  compiling root (1 scala source)
 2024.11.23 17:25:31 INFO  time: compiled root in 4.61s
+11月 23, 2024 5:29:28 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\.metals\.reports\metals-full\2024-11-23\r_compiler-error_(root)_17-29-28-376.md
+11月 23, 2024 5:29:46 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\.metals\.reports\metals-full\2024-11-23\r_compiler-error_(root)_17-29-46-269.md
+2024.11.23 17:29:56 INFO  compiling root (1 scala source)
+2024.11.23 17:30:03 INFO  time: compiled root in 6.84s
+2024.11.23 17:30:49 INFO  compiling root (1 scala source)
+2024.11.23 17:30:53 INFO  time: compiled root in 3.95s

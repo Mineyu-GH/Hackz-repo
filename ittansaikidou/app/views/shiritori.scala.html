@@ -10,11 +10,15 @@
         @* Add CSRF token *@
         <script>
         const csrfToken = '@helper.CSRF.getToken.value';
+
+            
         </script>
     </head>
     <body>
         <div class="container">
         <h1>しりとり Game</h1>
+
+        <div id="timer">Time Remaining: 30s</div>
         
         <div class="game-info">
             <h2>お題文字: <span id="targetChar">@game.targetChar</span></h2>
