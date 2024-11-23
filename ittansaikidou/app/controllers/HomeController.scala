@@ -5,6 +5,8 @@ import play.api.mvc._
 import play.api.libs.json._
 import models._
 
+//ありがてぇ！
+
 @Singleton
 class ShiritoriController @Inject()(val controllerComponents: ControllerComponents) 
   extends BaseController {
