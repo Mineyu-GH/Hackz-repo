@@ -34,11 +34,20 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
       case Some(word) =>
         ShiritoriGame.validateWord(word, currentGame) match {
           case Right(validWord) =>
-            currentGame = currentGame.copy(
-              targetChar = ShiritoriGame.getRandomChar,
-              usedWords = validWord :: currentGame.usedWords,
-              score = currentGame.score + word.length
+            if (validWord.startsWith("2")) {
+              currentGame = currentGame.copy(
+                targetChar = ShiritoriGame.getRandomChar,
+                usedWords = validWord.substring(1) :: currentGame.usedWords,
+                score = currentGame.score + 2 * (validWord.substring(1).length)
             )
+            }
+            else {
+              currentGame = currentGame.copy(
+                targetChar = ShiritoriGame.getRandomChar,
+                usedWords = validWord :: currentGame.usedWords,
+                score = currentGame.score + word.length
+            )
+            }
             Ok(Json.toJson(currentGame))
           
           case Left(error) =>

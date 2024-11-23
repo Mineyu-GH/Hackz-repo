@@ -2038,3 +2038,31 @@ java.lang.RuntimeException: invalid symbol format
 2024.11.23 14:52:26 INFO  Shut down connection with build server.
 2024.11.23 14:52:26 INFO  Shut down connection with build server.
 2024.11.23 14:52:26 INFO  Exiting server
+2024.11.23 15:38:09 INFO  Started: Metals version 1.4.1 in folders 'C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou' for client Visual Studio Code 1.95.3.
+2024.11.23 15:38:11 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.23 15:38:11 INFO  Attempting to connect to the build server...
+2024.11.23 15:38:11 INFO  Found a Bloop server running
+2024.11.23 15:38:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\.metals\bsp.trace.json or C:\Users\miney\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.23 15:38:12 INFO  Attempting to connect to the build server...
+2024.11.23 15:38:12 INFO  Found a Bloop server running
+2024.11.23 15:38:12 INFO  Attempting to connect to the build server...
+2024.11.23 15:38:12 INFO  Found a Bloop server running
+2024.11.23 15:38:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\project\.metals\bsp.trace.json or C:\Users\miney\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.23 15:38:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\miney\OneDrive\デスクトップ\Dev\Hackz\ittansaikidou\project\project\.metals\bsp.trace.json or C:\Users\miney\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.23 15:38:13 INFO  time: Connected to build server in 2.29s
+2024.11.23 15:38:13 INFO  Connected to Build server: Bloop v2.0.5
+2024.11.23 15:38:14 INFO  time: Imported build in 0.21s
+2024.11.23 15:38:14 INFO  running doctor check
+2024.11.23 15:38:14 INFO  java targets: ittansaikidou-build-build, root, ittansaikidou-build, root-test
+2024.11.23 15:38:24 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.23 15:38:30 INFO  time: indexed workspace in 15s
+11月 23, 2024 3:39:18 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 4
+11月 23, 2024 3:39:22 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 21
+11月 23, 2024 3:39:26 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 50
+11月 23, 2024 3:39:44 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 159
+2024.11.23 15:41:02 INFO  compiling root (1 scala source)
+2024.11.23 15:41:08 INFO  time: compiled root in 6.72s

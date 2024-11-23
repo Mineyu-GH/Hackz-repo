@@ -10,13 +10,16 @@ case class ShiritoriGame(
 object ShiritoriGame {
     def validateWord(word: String, game: ShiritoriGame): Either[String, String] = {
         if (!word.matches("^[ぁ-んー]*$")) {
-        Left("ひらがな")
+            Left("ひらがな")
         } else if (word.endsWith("ん")) {
-        Left("Game Over! 「ん」で終わりました")
+            Left("Game Over! 「ん」で終わりました")
         } else if (game.usedWords.contains(word)) {
-        Left("This word has already been used")
-        }  else {
-        Right(word)
+            Left("その言葉はもう使っています")
+        } else if (word.endsWith(game.targetChar)) {
+            Right("2" + word)
+        }
+        else {
+            Right(word)
         }
     }
 
