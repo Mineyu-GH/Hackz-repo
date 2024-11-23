@@ -17,12 +17,5 @@ scalaVersion := "2.13.15"
 
 libraryDependencies ++= Seq(
     guice,
-<<<<<<< HEAD
     "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.1" % Test
 )
-=======
-    javaJdbc,
-    "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.1" % Test,
-    "mysql" % "mysql-connector-java" % "8.0.33",
-)
->>>>>>> d371ccd1b23d251d0c8b88d8a39ac72bd71e46ce
