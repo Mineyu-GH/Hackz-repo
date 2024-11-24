@@ -9,5 +9,6 @@ target
 /RUNNING_PID
 .env
 .metals
+.bloop
 
 /conf/application.conf
