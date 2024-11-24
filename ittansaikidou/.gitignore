@@ -8,5 +8,6 @@ target
 /.settings
 /RUNNING_PID
 .env
+.metals
 
 /conf/application.conf
