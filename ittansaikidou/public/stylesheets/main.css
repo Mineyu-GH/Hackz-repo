@@ -1,4 +1,14 @@
+#targetChar {
+    color: blue;
+    font-size: 2em;
+    margin-left: 25%;
+}
 
+body {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #container {
     margin: 20px;
@@ -19,8 +29,8 @@
 
 #score-box {
     position: absolute;
-    right: 3%;
-    top: 5%;
+    right: 25%;
+    top: 2%;
 }
 
 .underline-input {

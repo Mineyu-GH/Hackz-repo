@@ -137,3 +137,4 @@ var bar = new ProgressBar.Line(container, {
     }
 });
 bar.set(1.0); // 初期状態を100%に設定
+
