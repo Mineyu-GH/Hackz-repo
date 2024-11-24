@@ -7,6 +7,8 @@ import play.api.mvc._
 
 import javax.inject.Inject
 
+//コミットテスト
+
 class DBInterfaceController @Inject()(cc: ControllerComponents)
   extends AbstractController(cc) {
 
