@@ -26,7 +26,7 @@ object readCSV {
   }
 
   //ひらがな→カタカナ
-  private def convertHtoT(hiragana: String): String = {
+  def convertHtoT(hiragana: String): String = {
     if (hiragana == null || hiragana.isEmpty) {
       return ""
     }

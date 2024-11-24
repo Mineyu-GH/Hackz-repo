@@ -97,6 +97,7 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
               }
           }
         } else {
+          
           BadRequest(Json.obj("error" -> "Game is already over"))
         }
 

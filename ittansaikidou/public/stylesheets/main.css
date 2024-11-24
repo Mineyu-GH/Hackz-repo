@@ -1,0 +1,38 @@
+
+
+#container {
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align items at the bottom */
+    position: relative;
+}
+
+#lastWord {
+    font-size: 2em;
+}
+
+#score-box {
+    position: absolute;
+    right: 3%;
+    top: 5%;
+}
+
+.underline-input {
+    font-size: 2em;
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid #000; /* Add a bottom border */
+    outline: none; /* Remove the focus outline */
+    width: 100%; /* Optional: Make it full width */
+    padding: 5px 0; /* Optional: Adjust padding */
+    background: none; /* Remove default input background */
+}
+
+.underline-input:focus {
+    border-bottom: 2px solid #007BFF; /* Change color on focus */
+}

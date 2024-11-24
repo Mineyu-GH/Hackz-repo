@@ -10,29 +10,41 @@
         @* Add CSRF token *@
         <script>
         const csrfToken = '@helper.CSRF.getToken.value';
-
-            
         </script>
+        <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.js"></script>
+
     </head>
     <body>
         <div class="container">
         <h1>しりとり Game</h1>
         <div id="timer">Time Remaining: 30s</div>
-        
-        <div class="game-info">
-            <h2>最後の言葉: </h2><span id="lastWord">@game.lastword</span>
-            <h2>お題文字: <span id="targetChar">@game.targetChar</span></h2>
-            <h3>SCORE: <span id="score">@game.score</span></h3>
+        <div id="container"></div>
+
+        <div id="score-box">
+            <h3>SCORE: <span id="score">@game.score</span>
+            </h3>
             <h3>ゲームステータス: <span id="gameState">@game.state</span></h3>
         </div>
 
-        <div class="game-input">
-            <form onsubmit="submitWord(); return false;">
-                <input type="text" id="wordInput" placeholder="しりとり" @if(game.state == GameOver){disabled}>
-            </form>
+
+
+            <div class="game-info">
+            <div id="word-box">
+                <h2>前の単語: </h2><span id="lastWord">@game.lastword</span>
+            </div>
+
+            <div class="game-input">
+                <form onsubmit="submitWord(); return false;">
+                    <input type="text" id="wordInput" class="underline-input" placeholder=${} @if(game.state == GameOver){disabled}>
+                </form>
+            </div>
             <button onclick="submitWord()">回答</button>
             <button onclick="newGame()">New GAME</button>
         </div>
+
+        <h2>お題文字: <span id="targetChar">@game.targetChar</span></h2>
+
+
 
         <div id="error" class="error-message"></div>
 
