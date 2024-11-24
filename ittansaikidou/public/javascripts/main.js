@@ -119,18 +119,6 @@ function updateProgressbar(timeRemaining) {
     bar.animate(progress);
 }
 
-// Add event listeners
-document.addEventListener('DOMContentLoaded', function () {
-    const wordInput = document.getElementById('wordInput');
-    if (wordInput) {
-        wordInput.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                submitWord();
-            }
-        });
-    }
-});
-
 // 以下フロントで使用するライブラリの適用
 //プログレスバー
 var bar = new ProgressBar.Line(container, {
