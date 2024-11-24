@@ -61,6 +61,7 @@ function updateGameState(game) {
     document.getElementById('targetChar').textContent = game.targetChar;
     document.getElementById('score').textContent = game.score;
     document.getElementById('gameState').textContent = game.state;
+    document.getElementById('lastWord').textContent = game.lastword;
 
     const wordList = document.getElementById('usedWords');
     wordList.innerHTML = '';

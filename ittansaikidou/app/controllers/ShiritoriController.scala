@@ -23,13 +23,12 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
   implicit val gameWrites: Writes[ShiritoriGame] = Json.writes[ShiritoriGame]
   
   private var currentGame = ShiritoriGame(ShiritoriGame.getRandomChar)
-  private var timeRemaining = 30 // 30 seconds timer
+  private var timeRemaining = 30 
   private var timerOpt: Option[java.util.Timer] = None
 
-  // Timer task to count down and update game state
   private def startTimer(): Unit = {
-    stopTimer() // Stop any existing timer
-    timeRemaining = 30 // Reset timer
+    stopTimer() 
+    timeRemaining = 30 
     
     val timer = new java.util.Timer()
     val task = new java.util.TimerTask {
@@ -64,7 +63,6 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
         if (currentGame.state == Active) {
           ShiritoriGame.validateWord(word, currentGame) match {
             case Right(validWord) =>
-              // Start or reset timer on valid word submission
               startTimer()
 
               if (validWord.startsWith("2")) {
@@ -113,7 +111,6 @@ class ShiritoriController @Inject()(val controllerComponents: ControllerComponen
     Ok(Json.toJson(currentGame))
   }
 
-  // Endpoint to get current time remaining
   def getTimeRemaining: Action[AnyContent] = Action {
     Ok(Json.obj("timeRemaining" -> timeRemaining))
   }
